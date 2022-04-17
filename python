@@ -1,0 +1,59 @@
+#example-4.6
+sal=int(input("Enter salary:"))
+if sal<10000:
+    sal=sal+sal*0.02
+print(sal)
+ch=input("Enter m or f:")
+if ch=='m':
+    bonus=sal*0.05
+else:
+    bonus=sal*0.10
+print(bonus)
+
+#4.10
+num1=int(input("Enter a number:"))
+num2=int(input("Enter a number:"))
+num3=int(input("Enter a number:"))
+if num1>num2 and num>num3:
+    print(num1,"is greatest")
+elif num2>num3 and num2>num1:
+    print(num2,"is greatest")
+else:
+    print(num3,"is greatest")
+    
+#example-4.11
+num=[1,2,3,4,5,6,7]
+days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+mapped=dict(zip(num,days))
+print(mapped)
+n=int(input("Enter a number:"))
+if 1<=n<=7:
+    print(mapped.get(n))
+else:
+    print("Not valid")
+
+example-4.12
+income=int(input('enter your income:'))
+taxable_amount=income-150000
+if income<=150000:
+    print('No Tax')
+elif 150001<=income<=300000:
+    print((taxable_amount-150001)*0.1,"is the tax amount")
+elif 300001<=income<=500000:
+    print((taxable_amount-300001)*0.2,"is the tax amount")
+else:
+    print((taxable_amount-500001)*0.3,"is the tax amount")
+
+#example-4.13
+ch=input("Enter a character:")
+if (ch>='A' and ch<='Z') or (ch>='a' and ch<='z'):
+    if ch.isupper():
+        print("Character is uppercase")
+    else:
+        print("Character is lowercase")
+elif ch.isdigit():
+    print("Character is number")
+else:
+    print("Invalid character")
+
+#example
